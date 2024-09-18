@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Snap</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <ul>
+        <li
+          class="dropdown"
+          onmouseenter="contentDropdown()"
+          onmouseleave="closeDropdown()"
+        >
+          Features
+          <img
+            src="./images/icon-arrow-down.svg"
+            alt="icon-arrow-down"
+            id="arrowDw"
+          />
+          <ul id="dropdown">
+            <li><img src="./images/icon-todo.svg" alt="Todo" />Todo List</li>
+            <li>
+              <img src="./images/icon-calendar.svg" alt="Calendar" />Calendar
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" alt="Reminders" />Reminders
+            </li>
+            <li>
+              <img src="./images/icon-planning.svg" alt="Planning" />Planning
+            </li>
+          </ul>
+        </li>
+        <li
+          class="dropdown2"
+          onmouseenter="contentDropdown2()"
+          onmouseleave="closeDropdown2()"
+        >
+          Company
+          <img
+            src="./images/icon-arrow-down.svg"
+            alt="icon-arrow-down"
+            id="arrowDw2"
+          />
+          <ul id="dropdown2">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+        <div class="login">
+          <input type="button" value="Login" />
+          <input type="button" value="Register" />
+        </div>
+      </ul>
+      <img
+        src="./images/icon-menu.svg"
+        alt="icon-menu"
+        onclick="openSide()"
+        class="icon-menu"
+      />
+
+      <div class="sidebar" id="sidebar">
+        <div class="icon-close-menu">
+          <img src="./images/icon-close-menu.svg" alt="icon-close-menu" onclick="closeSide()"/>
+        </div>
+        <div class="list-content">
+          <ul>
+            <li
+              class="dropdown"
+              onmouseenter="contentDropdown()"
+              onmouseleave="closeDropdown()"
+            >
+              Features
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                id="arrowDw"
+              />
+              <ul id="dropdown">
+                <li>
+                  <img src="./images/icon-todo.svg" alt="Todo" />Todo List
+                </li>
+                <li>
+                  <img
+                    src="./images/icon-calendar.svg"
+                    alt="Calendar"
+                  />Calendar
+                </li>
+                <li>
+                  <img
+                    src="./images/icon-reminders.svg"
+                    alt="Reminders"
+                  />Reminders
+                </li>
+                <li>
+                  <img
+                    src="./images/icon-planning.svg"
+                    alt="Planning"
+                  />Planning
+                </li>
+              </ul>
+            </li>
+            <li
+              class="dropdown2"
+              onmouseenter="contentDropdown2()"
+              onmouseleave="closeDropdown2()"
+            >
+              Company
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                id="arrowDw2"
+              />
+              <ul id="dropdown2">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+            <div class="login">
+              <input type="button" value="Login" />
+              <br>
+              <input type="button" value="Register" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="img-hero">
+        <img src="./images/image-hero-desktop.png" alt="image-hero-desktop" id="imageHeroDesktop"/>
+      </div>
+      <div class="text-hero">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+      </div>
+      <div class="brands">
+        <ul>
+          <li>
+            <img src="./images/client-databiz.svg" alt="client-databiz" />
+          </li>
+          <li>
+            <img src="./images/client-audiophile.svg" alt="client-audiophile" />
+          </li>
+          <li><img src="./images/client-meet.svg" alt="client-meet" /></li>
+          <li><img src="./images/client-maker.svg" alt="client-maker" /></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
